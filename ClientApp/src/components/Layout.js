@@ -13,6 +13,7 @@ export class Layout extends Component {
           {this.props.children}
         </Container>
       </div>
-    );
+      );
+      // This loads the nav menu, then loads the main menu here.
   }
 }
