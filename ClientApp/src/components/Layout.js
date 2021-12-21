@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container } from 'reactstrap';
 import { NavMenu } from './NavMenu';
+import { FootBar } from './FootBar';
 
 export class Layout extends Component {
   static displayName = Layout.name;
@@ -12,8 +13,9 @@ export class Layout extends Component {
         <Container>
           {this.props.children}
         </Container>
+        <FootBar />
       </div>
       );
-      // This loads the nav menu, then loads the main menu here.
+      // This loads the nav menu, then loads the content, then the footer.
   }
 }
