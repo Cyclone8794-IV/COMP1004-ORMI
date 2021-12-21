@@ -47,16 +47,17 @@ namespace Ormi
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
+            app.UseDefaultFiles();
 
             app.UseRouting();
-
+/*
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
             });
-
+*/
             app.UseSpa(spa =>
             {
                 spa.Options.SourcePath = "ClientApp";
