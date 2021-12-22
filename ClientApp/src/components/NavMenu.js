@@ -8,13 +8,9 @@ export class NavMenu extends Component {
 
   constructor (props) {
     super(props);
-    this.date = new Date(Date.now());
     this.toggleNavbar = this.toggleNavbar.bind(this);
     this.state = {
         collapsed: true,
-        year: this.date.getFullYear().toString(),
-        month: (this.date.getMonth()+1).toString(),
-        day: this.date.getDate().toString()
     };
   }
 
@@ -29,7 +25,7 @@ export class NavMenu extends Component {
       <header>
         <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3" light>
           <Container>
-            <NavbarBrand tag={Link} to="/">{this.state.day}/{this.state.month}/{this.state.year}</NavbarBrand>
+            <NavbarBrand tag={Link} to="/">Ormi</NavbarBrand>
             <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
             <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
               <ul className="navbar-nav flex-grow">

@@ -4,9 +4,11 @@ export class Timeline extends Component {
     static displayName = Timeline.name
 
     render() {
-        return (<div>
+        return (
+            <div>
             
 
-        </div>);
+            </div>
+        );
     }
 }
